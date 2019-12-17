@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="events.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="events.js"></script>
+    <script src="../base-model.js"></script>
+</head>
+<body>
+
+    <div class="topnav">
+  <a href="../homepage/homepage.html">Home</a>
+  <a class="active" href="events.html">Events</a>
+  <a href="../create-event/create_event.html">Create Event</a>
+  <a href="../share-event/share.html">Share Events</a>
+  <a href="../archieved-event/archieved_event.html">Archived Events</a>
+  <a href="../index.html">Logout</a>
+</div>  
+    <header>
+        <div class="name ">
+        <p id="name_header"></p>
+        </div>
+
+        <div class="ava">
+            <img src="../profile_pic.png" alt="avatar" style=""/>
+        </div>   
+  </header>
+    <div class="content">
+        <article class="info ">
+            
+
+            <div class="box" style="height:fit-content">
+
+                <p class="title" >
+                    <i  class="fa fa-asterisk"></i>Events:
+                </p>
+                <label id="search_label" for="">
+                  <span>Search</span>
+                  <input type="text" id="filter-search">
+                </label>
+                <span id="filter-results">
+                  <span id="filter-results-text">Showing n of m fields</span>
+                 <button id="filter-clear">Remove Search Criteria</button>
+                </span>
+                <ul id="events" style="list-style: none;">
+                    <h3 id="no_event"></h3>
+                </ul>
+                
+            </div>  
+</article>
+
+       
+
+    </div>
+
+    <div id="archived" class="modal">
+        <p>Event Archived!</p>
+    </div>
+    <div id="registered" class="modal">
+        <p>Event Registered!</p>
+    </div>
+    <footer>    </footer>
+</body>
+</html>

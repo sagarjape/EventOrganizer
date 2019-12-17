@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Share Event</title>
+    <link rel="stylesheet" href="share.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"/> 
+    <link href="../libs/jquery.multiselect.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../libs/jquery.multiselect.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="share.js"></script>
+    <script src="../base-model.js"></script>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="../homepage/homepage.html">Home</a>
+  <a href="../events/events.html">Events</a>
+  <a href="../create-event/create_event.html">Create Event</a>
+  <a class="active" href="share.html">Share Events</a>
+  <a href="../archieved-event/archieved_event.html">Archieved Events</a>
+  <a href="../index.html">Logout</a>
+</div>  
+    <header>
+        <div class="name ">
+        <p id="name_header"></p>
+        </div>
+
+        <div class="ava">
+            <img src="../profile_pic.png" alt="avatar" style=""/>
+        </div>   
+  </header>
+    <div class="content">
+        <aside class="info ">
+            <div class="box">
+                <p class="title">
+                    <i class="fa fa-info-circle"></i>Share Event
+                </p>
+                <form>
+                <div>
+                    <label for="eventName">Event Name:</label><br>
+                    <select id="eventName" onchange="showDiv('hidden_div', this)">
+                    </select><hr>
+                </div>
+                <div id="hidden_div">
+                <div>
+                    <label for="location">Location:</label><br>
+                    <label id="location"></label><hr>
+                </div>
+                <div>
+                    <label for="host">Host:</label><br>
+                    <label id="host"></label><hr>
+                </div>
+                <div>
+                    <label for="date">Date:</label><br>
+                    <label id="date"></label><hr>
+                </div>
+                <div>
+                    <label for="capacity">Capacity:</label><br>
+                    <label id="capacity"></label><hr>
+                </div>
+                <div>
+                    <label for="ticketPrice">Ticket Price:</label><br>
+                    <label id="ticketPrice"></label><hr>
+                </div>
+                <div>
+                    <label for="users">Share with user/users:</label><br>
+                    <textarea required id="users" style="margin-left: 18px; width: 450px; height: 40px;"></textarea>
+                </div>
+                    <div id="lower">
+                        <button type="button" onclick="share()">Share</button> 
+                    </div><!--/ lower-->
+                </div>
+                </form>
+            </div>
+        </aside>
+    </div>
+
+    <div id="shared" class="modal">
+        <p>Event Shared!</p>
+    </div>
+    <div id="error" class="modal">
+        <p>Invalid user/users entered!</p>
+    </div>
+    <footer>    </footer>
+</body>
+</html>

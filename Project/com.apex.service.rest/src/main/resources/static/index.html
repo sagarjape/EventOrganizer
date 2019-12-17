@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<script src="login.js"></script>
+<script src="base-model.js"></script>
+</head>
+<body>
+    <!-- Begin Page Content -->
+    <div id="container">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <div id="lower">
+                <label for="username">Dont have an account? <a href="signup/signup.html">SignUp</a></label>
+                 <button type="button" onclick="login()">Login</button> 
+            </div><!--/ lower-->
+        </form>
+    </div><!--/ container-->
+    <!-- End Page Content -->
+    <div id="invalidCredentials" class="modal">
+        <p>Wrong Username or Password!</p>
+    </div>
+</body>
+</html>

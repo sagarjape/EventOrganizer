@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit Event</title>
+    <link rel="stylesheet" href="edit_event.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="edit_event.js"></script>
+    <script src="../base-model.js"></script>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="../homepage/homepage.html">Home</a>
+  <a href="../events/events.html">Events</a>
+  <a href="../create-event/create_event.html">Create Event</a>
+  <a href="../share-event/share.html">Share Events</a>
+  <a href="../archieved-event/archieved_event.html">Archieved Events</a>
+  <a href="../index.html">Logout</a>
+</div>  
+    <header>
+        <div class="name ">
+        <p id="name_header"></p>
+        </div>
+
+        <div class="ava">
+            <img src="../profile_pic.png" alt="avatar" style=""/>
+        </div>
+  </header>
+    <div class="content">
+        <aside class="info">
+            <div class="box">
+                <p class="title">
+                    <i class="fa fa-info-circle"></i>Edit Event
+                </p>
+                <form>
+                    <div>
+                    <label for="eventName">Event Name:</label></br>
+                    <input type="text" id="eventName" name="eventName">
+                </div>
+                <div>
+                    <label for="location">Location:</label></br>
+                    <input type="text" id="location" name="location">
+                </div>
+                    <label for="host">Host:</label></br>
+                    <input type="text" id="host" name="host">
+                <div>
+                    <label for="date">Date:</label></br>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div>
+                    <label for="capacity">Capacity:</label></br>
+                    <input type="text" id="capacity" name="capacity">
+                </div>
+                <div>
+                    <label for="ticketPrice">Ticket Price:</label></br>
+                    <input type="text" id="ticketPrice" name="ticketPrice">
+                </div></br>
+                    <div id="lower">
+                        <button type="button" onclick="edit()">Edit</button> 
+                    </div><!--/ lower-->
+                </form>
+            </div> 
+
+            
+
+        </aside>
+    </div>
+
+    <div id="edited" class="modal">
+        <p>Event Edited!</p>
+    </div>
+    <footer>    </footer>
+</body>
+</html>

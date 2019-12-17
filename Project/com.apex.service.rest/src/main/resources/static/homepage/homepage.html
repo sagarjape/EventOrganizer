@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="homepage.js"></script>
+    <script src="../base-model.js"></script>
+</head>
+<body>
+
+    <div class="topnav">
+  <a class="active" href="homepage.html">Home</a>
+  <a href="../events/events.html">Events</a>
+  <a href="../create-event/create_event.html">Create Event</a>
+  <a href="../share-event/share.html">Share Events</a>
+  <a href="../archieved-event/archieved_event.html">Archieved Events</a>
+  <a href="../index.html">Logout</a>
+</div>  
+    <header>
+        <div class="name ">
+        <p id="name_header"></p>
+        </div>
+
+        <div class="ava">
+            <img src="../profile_pic.png" alt="avatar" style=""/>
+        </div>   
+  </header>
+    <div class="content">
+        <article class="info ">
+            <div class="box">
+                <p class="title">
+                    <i class="fa fa-info-circle"></i>User Profile
+                </p>
+                <ul style="list-style: none; margin-top:60px">
+               <li id="name">Name: </li>    
+   
+                <li id="email">Email: </li>       
+                
+                <li id="userProfile">Profile: </li>
+            </ul>
+            </div> 
+
+            <div class="box">
+
+                <p class="title" >
+                    <i  class="fa fa-asterisk"></i>Events Registered:
+                </p>
+
+                <ul id="eventsRegistered" style="list-style: none;">
+                    
+                </ul>
+                
+            </div>  
+
+           <div class="box">
+
+                <p class="title" >
+                    <i  class="fa fa-asterisk"></i>Events Hosted:
+                </p>
+
+                <ul id="eventsHosted" style="list-style: none;">
+                    
+                </ul>
+                
+            </div>  
+
+</article>
+
+     
+    <div id="unregistered" class="modal">
+        <p>Event Unregistered!</p>
+    </div>
+    <div id="deleted" class="modal">
+        <p>Event Deleted!</p>
+    </div>
+    <div id="edited" class="modal">
+        <p>Event Edited!</p>
+    </div>
+    <div id="shared" class="modal">
+        <p>Event Shared!</p>
+    </div>  
+
+    </div>
+    <footer>    </footer>
+</body>
+</html>
